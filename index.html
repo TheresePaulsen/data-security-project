@@ -50,62 +50,62 @@
         <h2>Fokus på Spear Phishing</h2>
         <p>Vi fokuserer her specifikt på spear phishing, som er en mere målrettet og sofistikeret form for phishing. I stedet for at sende generiske phishing-beskeder til et stort antal mennesker, er spear phishing-angreb skræddersyet til specifikke individer eller organisationer. Angriberne indsamler information om deres mål for at gøre deres henvendelser mere personlige og troværdige, hvilket øger sandsynligheden for succes. En vigtig del af spear phishing er at angriberen ofte udgiver sig for at være en betroet kontakt, såsom en kollega, en ven, et familiemedlem eller endda en myndighed. Denne falske identitet bruges til at vinde ofrets tillid og få dem til at handle som angriberen ønsker. Kilde: Kaspersky (2025).</p>
         <h2>Test om Spear Phishing</h2>
-        <p>Formålet med denne øvelse er at teste din evne til at genkende og reagere korrekt på et potentielt spear phishing-forsøg. Vær opmærksom på små detaljer, og tænk kritisk over enhver uventet anmodning om personlige oplysninger, selv når afsenderen tilsyneladende er en, du kender eller stoler på.</p>
+        <p>Formålet med denne øvelse er at teste din evne til at genkende og reagere korrekt på et potentielt spear phishing-forsøg. Vær opmærksom på små detaljer, og tænk kritisk over enhver uventet anmodning om personlige oplysninger, selv når afsenderen tilsyneladende er en som du kender eller stoler på.</p>
       </div>
       <div class="column right">
         <div class="scenes">
             <!-- start scene -->
-            <div id="box0">
+            <div id="introScene">
                 <p>Er du klar til at teste din viden om spear phishing?</p>
-                <button id="c0">Start her</button>
+                <button id="startButton">Start her</button>
             </div>
             
             <!-- scene 1: SMS'en -->
-            <div id="box1" class="hidden">
+            <div id="phishingMessageScene" class="hidden">
                 <p>Forestil dig at du er forælder.</p>
                 <p>En dag modtager du en sms fra et ukendt nummer hvori der står:</p>
                 <p class="message">"Hej mor. Det her er mit nye nummer. Jeg tabte min gamle telefon i toilettet, så jeg har købt en ny. Men mor, jeg har brug for hjælp til noget. Jeg står og mangler 8.000 kr. til at betale for min nye telefon. Kan du sende pengene til 44 32 48 17? Det er sælgers nummer."</p>
                 <p>Hvad gør du?</p>
-                <button id="c1">Du sender straks 8.000 kr. - det er jo dit barn.</button>
-                <button id="c2">Du svarer på sms'en: "Det er først på måneden, hvorfor har du ikke råd til selv at betale?"</button>
-                <button id="c3">Du ringer til din søn/datter på deres oprindelige nummer for at høre om det nu kan være rigtigt.</button>
+                <button id="sendMoneyButton">Du sender straks 8.000 kr. - det er jo dit barn.</button>
+                <button id="askQuestionButton">Du svarer på sms'en: "Det er først på måneden, hvorfor har du ikke råd til selv at betale?"</button>
+                <button id="callToVerifyButton">Du ringer til din søn/datter på deres oprindelige nummer for at høre om det nu kan være rigtigt.</button>
             </div>
             
             <!-- scene 2-1: sender penge med det samme -->
-            <div id="box2-1" class="hidden">
+            <div id="immediatePaymentScene" class="hidden">
                 <p>Senere på dagen ringer din søn/datter tilfældigt fra deres oprindelige nummer, og du finder ud af at du er blevet snydt.</p>
                 <p>Når du får en besked som denne, som er et eksempel på spear phishing, så ring altid til det oprindelige nummer. Det er den sikreste måde at undgå svindel.</p>
-                <button id="restart">Prøv igen</button>
+                <button id="restartButton">Prøv igen</button>
             </div>
             
             <!-- scene 2-2: spørger hvorfor -->
-            <div id="box2-2" class="hidden">
+            <div id="followupQuestionScene" class="hidden">
                 <p>Du får straks et svar tilbage:</p>
                 <p class="message">"Mit MobilePay virker ikke, da jeg har problemer med at sætte det op med mit nye nummer. Kan du ikke hjælpe mig med overførslen? Du får pengene retur i morgen."</p>
-                <button id="c4">Du ringer til din søn/datter på deres oprindelige nummer for at høre om det nu kan være rigtigt.</button>
-                <button id="c5">Du sender 8.000 kr., da dit barn jo står med et akut problem, og de siger du får pengene igen hurtigt.</button>
+                <button id="verifyAfterFollowupButton">Du ringer til din søn/datter på deres oprindelige nummer for at høre om det nu kan være rigtigt.</button>
+                <button id="sendMoneyAfterFollowupButton">Du sender 8.000 kr., da dit barn jo står med et akut problem, og de siger du får pengene igen hurtigt.</button>
             </div>
             
             <!-- scene 2-3: ringer direkte -->
-            <div id="box2-3" class="hidden">
+            <div id="callVerificationScene" class="hidden">
                 <p>Din søn/datter tager telefonen og siger de ikke har skiftet nummer. Det går op for dig at du er blevet udsat for et spear phishing forsøg.</p>
                 <p>Du afværgede at blive snydt fordi du tænkte kritisk. Godt gået!</p>
-                <button id="restart">Prøv igen</button>
+                <button id="restartButton">Prøv igen</button>
             </div>
             
             <!-- scene 3-1: ringer efter svar -->
-            <div id="box3-1" class="hidden">
+            <div id="verificationSuccessScene" class="hidden">
                 <p>Din søn/datter tager telefonen og siger de ikke har skiftet nummer. Det går op for dig at du er blevet udsat for et spear phishing forsøg.</p>
                 <p>Du afværgede at blive snydt fordi du tænkte kritisk. Godt gået!</p>
-                <button id="restart">Prøv igen</button>
+                <button id="restartButton">Prøv igen</button>
             </div>
             
             <!-- scene 3-2: sender penge efter svar -->
-            <div id="box3-2" class="hidden">
+            <div id="delayedFraudScene" class="hidden">
                 <p>Senere på dagen ringer din søn/datter tilfældigt fra deres oprindelige nummer, og du finder ud af at du er blevet snydt.</p>
                 <p>På trods af at du startede med at være kritisk, blev du alligevel snydt, da du blev udsat for spear phishing.</p>
                 <p>Når du får en besked som denne, så ring altid til det oprindelige nummer. Det er den sikreste måde at undgå svindel.</p>
-                <button id="restart">Prøv igen</button>
+                <button id="restartButton">Prøv igen</button>
             </div>
         </div>
         <img src="img/social-engineering.png" alt="Social engineering illustration">
