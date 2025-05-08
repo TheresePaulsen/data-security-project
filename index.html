@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forside</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/347572dc37.js" crossorigin="anonymous"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <!-- mobil header, vises kun på små skærme -->
+    <div class="mobile-header">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+      <button id="bars" class="menu-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    
+    <!-- desktop header, skjules på mobil -->
+    <nav id="main-nav">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+      <ul>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Gode råd</a></li>
+        <li><a href="#">Former for angreb</a></li>
+        <li><a href="#">Resourcer</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Social Engineering</h1>
+    </section>
+    <div class="container">
+      <div class="column left">
+        <h2>Social Engineering</h2>
+        <p>Social engineering er en bred betegnelse for psykologiske manipulationsteknikker der bruges til at narre folk til at udføre handlinger eller udlevere fortrolige oplysninger. Målet er at udnytte menneskelig tillid og svagheder i stedet for at angribe tekniske systemer.</p>
+        <h2>Phishing</h2>
+        <p>Som en underkategori inden for social engineering eksisterer phishing, som er en form for online svindel. Ved phishing forsøger angribere typisk at narre ofre til at udlevere personlige oplysninger såsom adgangskoder, kreditkortnumre eller andre følsomme data via falske e-mails, beskeder eller hjemmesider, der efterligner legitime enheder.</p>
+        <h2>Fokus på Spear Phishing</h2>
+        <p>Vi fokuserer her specifikt på spear phishing, som er en mere målrettet og sofistikeret form for phishing. I stedet for at sende generiske phishing-beskeder til et stort antal mennesker, er spear phishing-angreb skræddersyet til specifikke individer eller organisationer. Angriberne indsamler information om deres mål for at gøre deres henvendelser mere personlige og troværdige, hvilket øger sandsynligheden for succes. En vigtig del af spear phishing er at angriberen ofte udgiver sig for at være en betroet kontakt, såsom en kollega, en ven, et familiemedlem eller endda en myndighed. Denne falske identitet bruges til at vinde ofrets tillid og få dem til at handle som angriberen ønsker. Kilde: Kaspersky (2025).</p>
+        <h2>Test om Spear Phishing</h2>
+        <p>Formålet med denne øvelse er at teste din evne til at genkende og reagere korrekt på et potentielt spear phishing-forsøg. Vær opmærksom på små detaljer, og tænk kritisk over enhver uventet anmodning om personlige oplysninger, selv når afsenderen tilsyneladende er en, du kender eller stoler på.</p>
+      </div>
+      <div class="column right">
+        <div class="scenes">
+            <!-- start scene -->
+            <div id="box0">
+                <p>Er du klar til at teste din viden om spear phishing?</p>
+                <button id="c0">Start her</button>
+            </div>
+            
+            <!-- scene 1: SMS'en -->
+            <div id="box1" class="hidden">
+                <p>Forestil dig at du er forælder.</p>
+                <p>En dag modtager du en sms fra et ukendt nummer hvori der står:</p>
+                <p class="message">"Hej mor. Det her er mit nye nummer. Jeg tabte min gamle telefon i toilettet, så jeg har købt en ny. Men mor, jeg har brug for hjælp til noget. Jeg står og mangler 8.000 kr. til at betale for min nye telefon. Kan du sende pengene til 44 32 48 17? Det er sælgers nummer."</p>
+                <p>Hvad gør du?</p>
+                <button id="c1">Du sender straks 8.000 kr. - det er jo dit barn.</button>
+                <button id="c2">Du svarer på sms'en: "Det er først på måneden, hvorfor har du ikke råd til selv at betale?"</button>
+                <button id="c3">Du ringer til din søn/datter på deres oprindelige nummer for at høre om det nu kan være rigtigt.</button>
+            </div>
+            
+            <!-- scene 2-1: sender penge med det samme -->
+            <div id="box2-1" class="hidden">
+                <p>Senere på dagen ringer din søn/datter tilfældigt fra deres oprindelige nummer, og du finder ud af at du er blevet snydt.</p>
+                <p>Når du får en besked som denne, som er et eksempel på spear phishing, så ring altid til det oprindelige nummer. Det er den sikreste måde at undgå svindel.</p>
+                <button id="restart">Prøv igen</button>
+            </div>
+            
+            <!-- scene 2-2: spørger hvorfor -->
+            <div id="box2-2" class="hidden">
+                <p>Du får straks et svar tilbage:</p>
+                <p class="message">"Mit MobilePay virker ikke, da jeg har problemer med at sætte det op med mit nye nummer. Kan du ikke hjælpe mig med overførslen? Du får pengene retur i morgen."</p>
+                <button id="c4">Du ringer til din søn/datter på deres oprindelige nummer for at høre om det nu kan være rigtigt.</button>
+                <button id="c5">Du sender 8.000 kr., da dit barn jo står med et akut problem, og de siger du får pengene igen hurtigt.</button>
+            </div>
+            
+            <!-- scene 2-3: ringer direkte -->
+            <div id="box2-3" class="hidden">
+                <p>Din søn/datter tager telefonen og siger de ikke har skiftet nummer. Det går op for dig at du er blevet udsat for et spear phishing forsøg.</p>
+                <p>Du afværgede at blive snydt fordi du tænkte kritisk. Godt gået!</p>
+                <button id="restart">Prøv igen</button>
+            </div>
+            
+            <!-- scene 3-1: ringer efter svar -->
+            <div id="box3-1" class="hidden">
+                <p>Din søn/datter tager telefonen og siger de ikke har skiftet nummer. Det går op for dig at du er blevet udsat for et spear phishing forsøg.</p>
+                <p>Du afværgede at blive snydt fordi du tænkte kritisk. Godt gået!</p>
+                <button id="restart">Prøv igen</button>
+            </div>
+            
+            <!-- scene 3-2: sender penge efter svar -->
+            <div id="box3-2" class="hidden">
+                <p>Senere på dagen ringer din søn/datter tilfældigt fra deres oprindelige nummer, og du finder ud af at du er blevet snydt.</p>
+                <p>På trods af at du startede med at være kritisk, blev du alligevel snydt, da du blev udsat for spear phishing.</p>
+                <p>Når du får en besked som denne, så ring altid til det oprindelige nummer. Det er den sikreste måde at undgå svindel.</p>
+                <button id="restart">Prøv igen</button>
+            </div>
+        </div>
+        <img src="img/social-engineering.png" alt="Social engineering illustration">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#">Copyright</a></li>
+      <li><a href="#">Kontaktinformationer</a></li>
+      <li><a href="#">Sociale medier</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

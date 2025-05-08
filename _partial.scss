@@ -1,0 +1,27 @@
+/* variabler */
+$header-color: #C0CAAD;
+$btn-color: #CEC075;
+$footer-color: #9DA9A0;
+$background-color: #654C4F;
+$text-color: #FFFFFF;
+$header-text-color: #000000;
+$font: 'Open Sans', sans-serif;
+
+/* mixins */
+@mixin list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+@mixin btn {
+  font-family: $font;
+  background-color: $btn-color;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin: 20px 0;
+  cursor: pointer;
+}
